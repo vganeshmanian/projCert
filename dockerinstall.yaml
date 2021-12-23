@@ -1,6 +1,7 @@
 ---
-- hosts: all
+- hosts: localhost
+  become: true
   tasks:
-          - name: Show date
-            shell: date
+          - name: install docker
+            shell: apt install docker
 ...
